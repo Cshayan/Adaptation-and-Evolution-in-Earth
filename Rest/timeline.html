@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Timeline</title>
+  <link rel="icon" href="adaptation.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="styletimeline.css" />
+  <style>
+    .button {
+      background-color: #fff;
+      border: 2px solid #000;
+      color: #000;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s;
+      /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .button5:hover {
+      background-color: #000;
+      color: white;
+    }
+
+    .bg {
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="timeline-container" id="timeline-1">
+    <div class="timeline-header">
+      <h2 class="timeline-header__title">
+        Detailed Analysis of Evolution of Mankind on Earth
+      </h2>
+      <h3 class="timeline-header__subtitle" style="color: #fff;">Let's Explore</h3>
+    </div>
+    <button id="myBtn">Visit</button>
+    <div class="timeline">
+      <div class="timeline-item" data-text="3.8 billion years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/bacteria.jpg" />
+          <h2 class="timeline__content-title">
+            3.8 billion years ago
+          </h2>
+          <p class="timeline__content-desc">
+            <b>This is our current “best guess” for the beginning of life on
+              Earth. It is distinctly possible that this date will change as
+              more evidence comes to light. The first life may have developed
+              in undersea alkaline vents, and was probably based on RNA rather
+              than DNA. At some point far back in time, a common ancestor gave
+              rise to two main groups of life: bacteria and archaea. How this
+              happened, when, and in what order the different groups split, is
+              still uncertain.</b>
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text=" 
+            3.5 billion years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/fossils.jpg" />
+          <h2 class="timeline__content-title">
+            3.5 billion years ago
+          </h2>
+          <p class="timeline__content-desc">
+            <b>The oldest fossils found thus far on Earth are c. 3.49- and
+              3.46-billion-year-old filamentous and coccoidal microbial
+              remains in rocks of the Pilbara craton, Western Australia, and
+              c. 3.4-billion-year-old rocks from the Barberton region, South
+              Africa. Their biogenicity was recently questioned and they were
+              reinterpreted as contaminants, mineral artefacts or inorganic
+              carbon aggregates. </b>
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="3.46 billion years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/single_cell_sized.jpg" />
+          <h2 class="timeline__content-title">3.46 billion years ago</h2>
+          <p class="timeline__content-desc">
+            <b>
+              Some single-celled organisms may be feeding on methane by this
+              time.</b>
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text=" 
+            3.4 billion years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/microbes.jpg" />
+          <h2 class="timeline__content-title">
+            3.4 billion years ago
+          </h2>
+          <p class="timeline__content-desc">
+            <b>
+              Rock formations in Western Australia, that some researchers
+              claim are fossilised microbes, date from this period.
+            </b>
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text=" 
+            3 billion years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/virus.jpg" style="height: 200px;" />
+          <h2 class="timeline__content-title">
+            3 billion years ago
+          </h2>
+          <p class="timeline__content-desc">
+            <b>Viruses are present by this time, but they may be as old as
+              life itself.</b>
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="2.4 billion years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/oxygen.jpg" />
+          <h2 class="timeline__content-title">2.4 billion years ago</h2>
+          <p class="timeline__content-desc">
+            <b>The “great oxidation event”. Supposedly, the poisonous waste
+              produced by photosynthetic cyanobacteria – oxygen – starts to
+              build up in the atmosphere. Dissolved oxygen makes the iron in
+              the oceans “rust” and sink to the seafloor, forming striking
+              banded iron formations. Recently, though, some researchers have
+              challenged this idea. They think cyanobacteria only evolved
+              later, and that other bacteria oxidised the iron in the absence
+              of oxygen.
+            </b>
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text=" 
+            2.3 billion years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/snow.jpg" />
+          <h2 class="timeline__content-title">
+            2.3 billion years ago
+          </h2>
+          <p class="timeline__content-desc">
+            <b>
+              Earth freezes over in what may have been the first “snowball
+              Earth”, possibly as a result of a lack of volcanic activity.
+              When the ice eventually melts, it indirectly leads to more
+              oxygen being released into the atmosphere.
+            </b>
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="2.15 billion years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/cyanobacteria.jpg" />
+          <h2 class="timeline__content-title">2.15 billion years ago</h2>
+          <p class="timeline__content-desc">
+            <b>First undisputed fossil evidence of cyanobacteria, and of
+              photosynthesis: the ability to take in sunlight and carbon
+              dioxide, and obtain energy, releasing oxygen as a by-product.
+            </b>
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text=" 
+            2 billion years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/eukaryot.png" />
+          <h2 class="timeline__content-title">
+            2 billion years ago
+          </h2>
+          <p class="timeline__content-desc">
+            <b>Eukaryotic cells – cells with internal “organs” (known as
+              organelles) – come into being. One key organelle is the nucleus:
+              the control centre of the cell, in which the genes are stored in
+              the form of DNA. Eukaryotic cells evolved when one simple cell
+              engulfed another, and the two lived together, more or less
+              amicably – an example of “endosymbiosis”. The engulfed bacteria
+              eventually become mitochondria, which provide eukaryotic cells
+              with energy. The last common ancestor of all eukaryotic cells
+              had mitochondria – and had also developed sexual reproduction.
+            </b>
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="1.5 billion years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/mushrooms.jpg" />
+          <h2 class="timeline__content-title">1.5 billion years ago</h2>
+          <p class="timeline__content-desc">
+            <b>The eukaryotes divide into three groups: the ancestors of
+              modern plants, fungi and animals split into separate lineages,
+              and evolve separately. We do not know in what order the three
+              groups broke with each other. At this time they were probably
+              all still single-celled organisms.</b>
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text=" 
+            900 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/multicell.jpg" />
+          <h2 class="timeline__content-title">
+            900 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            <b>The first multicellular life develops around this time. It is
+              unclear exactly how or why this happens, but one possibility is
+              that single-celled organisms go through a stage similar to that
+              of modern choanoflagellates: single-celled creatures that
+              sometimes form colonies consisting of many individuals.</b>
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text=" 
+            800 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/sea-sponge.jpg" />
+          <h2 class="timeline__content-title">
+            800 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            The early multicellular animals undergo their first splits. First
+            they divide into, essentially, the sponges and everything else –
+            the latter being more formally known as the Eumetazoa.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text=" 
+            770 million years ago
+            ">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/snow1.jpg" />
+          <h2 class="timeline__content-title">
+            770 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            The planet freezes over again in another “snowball Earth“.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="  730 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/jellyfish.jpg" />
+          <h2 class="timeline__content-title">730 million years ago</h2>
+          <p class="timeline__content-desc">
+            The comb jellies (ctenophores) split from the other multicellular
+            animals. Like the cnidarians that will soon follow, they rely on
+            water flowing through their body cavities to acquire oxygen and
+            food.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text=" 630 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/acoela.jpg" />
+          <h2 class="timeline__content-title">
+            630 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            Around this time, some animals evolve bilateral symmetry for the
+            first time: that is, they now have a defined top and bottom, as
+            well as a front and back. Little is known about how this happened.
+            However, small worms called Acoela may be the closest surviving
+            relatives of the first ever bilateral animal.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text=" 580 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/jellyfishfossil.jpg" />
+          <h2 class="timeline__content-title">580 million years ago</h2>
+          <p class="timeline__content-desc">
+            The earliest known fossils of cnidarians, the group that includes
+            jellyfish, sea anemones and corals, date to around this time –
+            though the fossil evidence has been disputed.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="575 million years ago ">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/ediacara.jpg" />
+          <h2 class="timeline__content-title">
+            575 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            Strange life forms known as the Ediacarans appear around this time
+            and persist for about 33 million years.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="540 million years ago ">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/seasquirts.jpg" />
+          <h2 class="timeline__content-title">
+            540 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            The sea squirts (tunicates) begin their history as tadpole-like
+            chordates, but metamorphose partway through their lives into
+            bottom-dwelling filter feeders that look rather like a bag of
+            seawater anchored to a rock.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="530 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/hagfish.jpg" />
+          <h2 class="timeline__content-title">
+            530 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            The first true vertebrate – an animal with a backbone – appears.
+            It probably evolves from a jawless fish that has a notochord, a
+            stiff rod of cartilage, instead of a true backbone. The first
+            vertebrate is probably quite like a lamprey, hagfish or lancelet.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="520 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/conodonts.jpg" />
+          <h2 class="timeline__content-title">
+            520 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            Conodonts, another contender for the title of “earliest
+            vertebrate“, appear. They probably look like eels.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="500 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/nectocaris.jpg" />
+          <h2 class="timeline__content-title">
+            500 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            Nectocaris pteryx, thought to be the oldest known ancestor of the
+            cephalopods – the group that includes squid – lives around this
+            time.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="465 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/plants.jpg" />
+          <h2 class="timeline__content-title">
+            465 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            Plants begin colonising the land.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="425 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/coelacanth.jpg" />
+          <h2 class="timeline__content-title">
+            425 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            The coelacanth, one of the most famous “living fossils” – species
+            that have apparently not changed for millions of years – splits
+            from the rest of the lobe-finned fish.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="417 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/lungfish.jpg" />
+          <h2 class="timeline__content-title">
+            417 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            Lungfish, another legendary living fossil, follow the coelacanth
+            by splitting from the other lobe-finned fish. Although they are
+            unambiguously fish, complete with gills, lungfish have a pair of
+            relatively sophisticated lungs, which are divided into numerous
+            smaller air sacs to increase their surface area.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="400 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/oldinsect.jpg" />
+          <h2 class="timeline__content-title">
+            400 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            The oldest known insect lives around this time. Some plants evolve
+            woody stems.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="397 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/tetrapod.jpg" />
+          <h2 class="timeline__content-title">
+            397 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            The first four-legged animals, or tetrapods, evolve from
+            intermediate species such as Tiktaalik, probably in shallow
+            freshwater habitats.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="375 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/tiktaalik.jpg" />
+          <h2 class="timeline__content-title">
+            375 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            Tiktaalik, an intermediate between fish and four-legged land
+            animals, lives around this time. The fleshy fins of its lungfish
+            ancestors are evolving into limbs.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="320-250 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/pelycosaur.jpg" />
+          <h2 class="timeline__content-title">
+            320-250 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            The pelycosaurs, the first major group of synapsid animals,
+            dominate the land. The most famous example is Dimetrodon, a large
+            predatory “reptile” with a sail on its back. Despite appearances,
+            Dimetrodon is not a dinosaur.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="210 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/protoavis.jpg" />
+          <h2 class="timeline__content-title">
+            210 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            Bird-like footprints and a badly-preserved fossil called Protoavis
+            suggest that some early dinosaurs are already evolving into birds
+            at this time. This claim remains controversial.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="168 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/epidexipteryx.jpg" />
+          <h2 class="timeline__content-title">
+            168 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            A half-feathered, flightless dinosaur called Epidexipteryx, which
+            may be an early step on the road to birds, lives in China.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="150 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/archaeopteryx.jpg" />
+          <h2 class="timeline__content-title">
+            150 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            Archaeopteryx, the famous “first bird”, lives in Europe.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="131 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/Eoconfuciusornis_zhengi.jpg" />
+          <h2 class="timeline__content-title">
+            131 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            Eoconfuciusornis, a bird rather more advanced than Archaeopteryx,
+            lives in China.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="130 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/firstflower.jpg" />
+          <h2 class="timeline__content-title">
+            130 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            The first flowering plants emerge, following a period of rapid
+            evolution.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="100 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/Argentinosaurus-1_eb84.jpg" />
+          <h2 class="timeline__content-title">
+            100 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            The giant sauropod Argentinosaurus, believed to be the largest
+            land animal in Earth’s history, lives around this time.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="75 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/rodents.jpg" />
+          <h2 class="timeline__content-title">
+            75 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            The ancestors of modern primates split from the ancestors of
+            modern rodents and lagomorphs (rabbits, hares and pikas). The
+            rodents go on to be astonishingly successful, eventually making up
+            around 40 per cent of modern mammal species.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="70 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/grass.jpg" />
+          <h2 class="timeline__content-title">
+            70 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            Grasses evolve – though it will be several million years before
+            the vast open grasslands appear.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="58 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/Tarsier.jpg" />
+          <h2 class="timeline__content-title">
+            58 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            The tarsier, a primate with enormous eyes to help it see at night,
+            splits from the rest of the haplorhines: the first to do so.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="50 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/wolfnot.jpg" />
+          <h2 class="timeline__content-title">
+            50 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            Artiodactyls, which look like a cross between a wolf and a tapir,
+            begin evolving into whales.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="40 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/monkey.jpg" />
+          <h2 class="timeline__content-title">
+            40 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            New World monkeys become the first simians (higher primates) to
+            diverge from the rest of the group, colonising South America.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="25 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/apes.jpg" />
+          <h2 class="timeline__content-title">
+            25 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            Apes split from the Old World monkeys.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="14 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/orangutan.jpg" />
+          <h2 class="timeline__content-title">
+            14 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            Orangutans branch off from the other great apes, spreading across
+            southern Asia while their cousins remain in Africa.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="7 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/gorilla.jpg" />
+          <h2 class="timeline__content-title">
+            7 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            Gorillas branch off from the other great apes.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="6 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/human.jpg" style="height: 200px;" />
+          <h2 class="timeline__content-title" style="color: black;">
+            6 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            Humans diverge from their closest relatives; the chimpanzees and
+            bonobos. Shortly afterwards, hominins begin walking on two legs.
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="2 million years ago">
+        <div class="timeline__content">
+          <img class="timeline__img" src="timeline/Josephoartigasia-monesi.jpg" />
+          <h2 class="timeline__content-title" style="color: black;">
+            2 million years ago
+          </h2>
+          <p class="timeline__content-desc">
+            A 700-kilogram rodent called Josephoartigasia monesi lives in
+            South America. It is the largest rodent known to have lived,
+            displacing the previous record holder: a giant guinea pig.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="bg">
+     <center> <a class="button button5" href="index.html">Go to Home</a></center>
+    </div> -->
+  <section class="section1 section1-dark">
+    <div class="row">
+      <div class="col-sm-4">
+        <h1 class="text-center">
+          <a href="index.html">ADAPTATION</a>
+        </h1>
+      </div>
+      <br>
+      <div class="col-sm-8" id="link">
+        <a href="fishes.html"
+          class="text-primary">Fishes</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="amphibians.html"
+          class="text-primary">Amphibians</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="pre-mammals.html"
+          class="text-primary">Pre-Mammals</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="mammals.html"
+          class="text-primary">Mammals</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        <a href="Reptiles.html"
+          class="text-primary">Reptiles</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="birds.html"
+          class="text-primary">Birds</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+    <br><br>
+    <hr>
+    <div class="row">
+      <div class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-3">© 2019 Copyright<br>
+          <a href="index.html">&nbsp;adaptation.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="preloader">
+    <div id="loader"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="timeline.js"></script>
+</body>
+
+</html>
