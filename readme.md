@@ -8,5 +8,3 @@
 [![Ask Me Anything !](https://img.shields.io/badge/Made%20using-WikiAPI-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 
 It is an HackerEarth task given in the HackBenchers#3 edition based on the theme 'Evolution on Earth'. 
-
-Live Demo:- https://adaptationofearth.000webhostapp.com/
